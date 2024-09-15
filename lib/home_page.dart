@@ -21,6 +21,35 @@ class MyHomePage extends StatelessWidget {
           ),
         ],
       ),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: const [
+            DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+              child: Text(
+                'speech to text',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
+                ),
+              ),
+            ),
+            ListTile(
+              leading: Icon(Icons.info),
+              title: Text(''),
+              subtitle: Text('© Mohamed Abuzriba'),
+            ),
+            ListTile(
+              leading: Icon(Icons.email),
+              title: Text('البريد الإلكتروني'),
+              subtitle: Text('mohamedabuzriba@hotmail.com'),
+            ),
+          ],
+        ),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
